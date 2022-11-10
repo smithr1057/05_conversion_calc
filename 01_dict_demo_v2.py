@@ -8,7 +8,9 @@ my_dict = {
 }
 
 your_num = int(input("Enter a number: "))
+print()
 to_do = input("double or half? ").lower()
+print()
 
 # look up value
 multiply_by = my_dict[to_do]

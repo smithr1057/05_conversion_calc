@@ -7,6 +7,15 @@ my_dict = {
     "red": "apple"
 }
 
+distance_dict = {
+    "cm": 100,
+    "m": 1, 
+    "km":0.001,
+    "mm": 1000
+    }
+
+
+
 # list to make testing faster
 to_check = ["red", "salad", "apple", "blue"]
 
