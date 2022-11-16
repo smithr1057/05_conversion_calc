@@ -127,26 +127,77 @@ def weight_conv():
     weight_to = input("Enter unit to convert to (mg, g, kg, t): ")
     print()
 
+    weight_amount = float(input("Please enter the amount you want to convert: "))
+
     if weight_from in weight_dict:
-        # check if it's a key (ie: a colour in our dictionary)
+        
 
-            # look up the value associated with the key
-            times_by = weight_dict[]
+            # find the answer
+            divide_by = weight_dict[weight_from]
 
-            weight_answer = weight_from * times_by 
-            # output the value and the key (eg: the sky is blue)
-            print("{}".format(weight_answer))
+            part_1 = weight_amount / divide_by 
+            factor_1 = weight_dict[weight_to]
+
+            weight_answer = part_1 * factor_1
+
+            # output the value and the key
+            
+            print("{}{} = {}{}".format(weight_amount, weight_from, weight_answer, weight_to))
         
 
 
 def distance_conv():
 
-    pass
+    # Ask user what to convert from and to
+    
+    distance_from = input("Enter unit to convert from (mm, cm, m, km): ")
+    print()
+    distance_to = input("Enter unit to convert to (mm, cm, m, km): ")
+    print()
+
+    distance_amount = float(input("Please enter the amount you want to convert: "))
+
+    if distance_from in distance_dict:
+        
+
+            # find the answer
+            divide_by = distance_dict[distance_from]
+
+            part_1 = distance_amount / divide_by 
+            factor_1 = distance_dict[distance_to]
+
+            distance_answer = part_1 * factor_1
+
+            # output the value and the key
+            
+            print("{}{} = {}{}".format(distance_amount, distance_from, distance_answer, distance_to))
 
 
 def time_conv():
 
-    pass
+    # Ask user what to convert from and to
+    
+    time_from = input("Enter unit to convert from (mm, cm, m, km): ")
+    print()
+    time_to = input("Enter unit to convert to (mm, cm, m, km): ")
+    print()
+
+    time_amount = float(input("Please enter the amount you want to convert: "))
+
+    if time_from in time_dict:
+        
+
+            # find the answer
+            divide_by = time_dict[time_from]
+
+            part_1 = time_amount / divide_by 
+            factor_1 = time_dict[time_to]
+
+            time_answer = part_1 * factor_1
+
+            # output the value and the key
+            
+            print("{}{} = {}{}".format(time_amount, time_from, time_answer, time_to))
 
 
 # Main Routine goes here
@@ -155,7 +206,7 @@ def time_conv():
 statement_generator("Conversion Calculator for Weight, Distance & Time", "*")
 
 # Display instructions if user has not used the progra before
-first_time = input("Press <enter> to see the instructions or any key to continue ")
+first_time = input("Press <enter> to see the instructions or any key to continue: ")
 print()
 
 if first_time == "":
